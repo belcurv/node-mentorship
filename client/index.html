@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Demo App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Node.js API Demo Client Application</h1>
+    <hr>
+
+    <div class="col-xs-6">
+      <div class="well">
+        <h3>Send http GET request to API</h3>
+        <button id="get-json-button" class="btn btn-warning">Get JSON</button>
+      </div>
+
+    </div>
+
+    <div class="col-xs-6">
+      <div class="well">
+        <h3>Send http POST request to API</h3>
+        <form id="post-form">
+          <div class="form-group">
+            <label for="post-form-firstname">First Name</label>
+            <input class="form-control" type="text" id="post-form-firstname">
+            <label for="post-form-lastname">Last Name</label>
+            <input class="form-control" type="text" id="post-form-lastname">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-xs-12">
+      <div id="target"></div>
+    </div>
+
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/events.js"></script>
+
+  <!-- feature modules -->
+  <script src="js/get-json-module.js"></script>
+  <script src="js/post-module.js"></script>
+  <script src="js/output-module.js"></script>
+
+  <script>
+    window.addEventListener('load', () => app.init());
+  </script>
+
+</body>
+</html>
