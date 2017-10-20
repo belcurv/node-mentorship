@@ -1,14 +1,14 @@
 {
-  "name": "temp",
+  "name": "node-mentorship",
   "version": "1.0.0",
-  "description": "",
-  "main": "test.js",
+  "description": "Demo full-stack app for Node/Express mentoring",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "belcurv",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
